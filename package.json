@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "install": "cd client && npm install",
+    "build": "cd client && npm run build"
+  },
+  "dependencies": {
+    "@types/recharts": "^1.8.29",
+    "firebase": "^11.3.1",
+    "recharts": "^2.15.1"
+  }
+}

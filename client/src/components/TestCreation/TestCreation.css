@@ -1,0 +1,75 @@
+/* TestCreation.css */
+.test-creation-container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .test-creation-container h2 {
+    text-align: center;
+    color: #333;
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+  
+  .test-creation-container label {
+    font-weight: 600;
+    display: block;
+    margin-top: 12px;
+    color: #555;
+  }
+  
+  .test-creation-container input,
+  .test-creation-container select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: 0.3s ease-in-out;
+  }
+  
+  .test-creation-container input:focus,
+  .test-creation-container select:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 6px rgba(0, 123, 255, 0.2);
+  }
+  
+  .test-creation-container button {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    margin-top: 18px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .test-creation-container button:hover {
+    background: linear-gradient(135deg, #0056b3, #004494);
+  }
+  
+  .test-creation-container input[type="text"] {
+    margin-bottom: 10px;
+  }
+  
+  .test-creation-container select {
+    cursor: pointer;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .test-creation-container {
+      max-width: 90%;
+      padding: 15px;
+    }
+  }
+  

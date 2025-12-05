@@ -1,0 +1,187 @@
+/* Import Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Background Styling - White Professional Theme */
+.register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #f8f9fa; /* Light gray background */
+    color: #1e293b; /* Dark text */
+}
+
+/* Register Box */
+.register-box {
+    background: #ffffff; /* Pure white */
+    padding: 40px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid #e2e8f0; /* Light gray border */
+    margin-bottom:250px;
+}
+
+/* Title */
+.register-box h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #1e293b; /* Dark navy */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Register Form */
+.register-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Input Groups */
+.input-group {
+    display: flex;
+    align-items: center;
+    background: #f1f5f9; /* Light gray input background */
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0; /* Subtle border */
+}
+
+/* Input Fields */
+.input-group input {
+    border: none;
+    background: transparent;
+    color: #1e293b;
+    margin-left: 10px;
+    outline: none;
+    flex: 1;
+    font-size: 1rem;
+}
+
+/* Icons */
+.icon {
+    color: #64748b; /* Muted gray */
+    font-size: 1.2rem;
+}
+
+/* Toggle Password Visibility */
+.toggle-password {
+    cursor: pointer;
+    color: #64748b; /* Muted gray */
+    font-size: 1.2rem;
+    margin-left: 8px;
+}
+
+/* Smooth Spacing Transition */
+.role-dropdown-container {
+    transition: margin-bottom 0.3s ease-in-out;
+    margin-bottom: 10px;
+}
+
+.role-dropdown-container.expanded {
+    margin-bottom: 57px;
+}
+
+/* Role Selection */
+.role-label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1rem;
+}
+
+/* Select Dropdown */
+select {
+    padding: 10px;
+    border-radius: 5px;
+    background: #f1f5f9;
+    color: #1e293b;
+    border: 1px solid #e2e8f0;
+    outline: none;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+/* Modern Button Styling */
+.register-button {
+    position: relative;
+    padding: 14px 36px;
+    font-size: 1.125rem;
+    font-weight: bold;
+    color: #ffffff;
+    background: #6366f1; /* Indigo */
+    border: 2px solid #6366f1;
+    border-radius: 50px;
+    box-shadow: 0 0 10px rgba(99, 102, 241, 0.3);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+}
+
+/* Button Glow Effect */
+.register-button::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(99, 102, 241, 0.3);
+    transform: scale(0);
+    transition: transform 0.4s ease-in-out;
+    border-radius: 50px;
+    opacity: 0.4;
+}
+
+/* Hover Effects */
+.register-button:hover {
+    color:black;
+    background:skyblue;
+    transform: scale(1.05);
+    box-shadow: 0 0 20px skyblue;
+}
+
+.register-button:hover::before {
+    transform: scale(1);
+}
+
+/* Already Have an Account? */
+.login-link {
+    margin-top: 15px;
+    font-size: 1rem;
+}
+
+.login-link a {
+    color: #6366f1;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+    color:green;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

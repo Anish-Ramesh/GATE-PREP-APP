@@ -4,6 +4,7 @@ node_modules/
 venv/
 env/
 
+
 # Environment Variables
 .env
 .env.local
@@ -11,6 +12,7 @@ env/
 .env.test.local
 .env.production.local
 client/.env
+
 
 # Python
 __pycache__/
@@ -34,10 +36,12 @@ wheels/
 .installed.cfg
 *.egg
 
+
 # React/Vite
 client/dist/
 client/build/
 client/.eslintcache
+
 
 # Firebase
 .firebase/
@@ -45,11 +49,13 @@ firebase-debug.log*
 firestore-debug.log*
 ui-debug.log*
 
+
 # IDEs
 .vscode/
 .idea/
 *.swp
 *.swo
+
 
 # OS
 .DS_Store

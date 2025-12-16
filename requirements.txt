@@ -2,3 +2,4 @@ flask
 google-genai
 python-dotenv
 flask-cors
+pandas #if used
